@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+
+    <div id="conteudo">
+      <button id="meu-botao">Click</button>
+    </div>
+
+
+
+    <script>
+      const botao = document.getElementById("meu-botao");
+
+      function handleClick() {
+        console.log("O botão foi clicado!");
+      }
+
+      botao.addEventListener("click", handleClick);
+
+
+    </script>
+  </body>
+</html>
