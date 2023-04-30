@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+
+    <div id="conteudo">
+      <p class="texto">Este é um parágrafo.</p>
+      <p class="texto">Este é outro parágrafo.</p>
+    </div>
+
+
+
+    <script>
+      const conteudo = document.getElementById("conteudo");
+      const paragrafos = document.querySelectorAll(".texto");
+
+      // Alterando a propriedade "style" do elemento
+      conteudo.style.backgroundColor = "blue";
+
+      // Adicionando uma classe ao elemento
+      conteudo.classList.add("destaque");
+
+      // Adicionando um elemento filho ao elemento
+      const novoParagrafo = document.createElement("p");
+      novoParagrafo.textContent = "Este é um novo parágrafo.";
+      conteudo.appendChild(novoParagrafo);
+
+      // Alterando o conteúdo do elemento
+      paragrafos[0].textContent = "Este é um parágrafo alterado.";
+
+    </script>
+  </body>
+</html>
