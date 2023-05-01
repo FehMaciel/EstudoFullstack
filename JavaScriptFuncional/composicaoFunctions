@@ -1,0 +1,13 @@
+function double(x) {
+  return x * 2;
+}
+
+function addFive(x) {
+  return x + 5;
+}
+
+function doubleAndAddFive(x){
+  return addFive(double(x));
+}
+
+console.log(doubleAndAddFive(4)); // 9
