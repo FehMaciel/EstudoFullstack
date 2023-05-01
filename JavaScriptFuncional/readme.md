@@ -35,3 +35,7 @@ Closures são funções que têm acesso às variáveis em seu escopo léxico, me
 
 <h3>Imutabilidade de dados</h3>
 Em JavaScript, isso significa que você deve evitar modificar objetos ou arrays diretamente e, em vez disso, criar novos objetos ou arrays com os valores atualizados. Isso ajuda a evitar problemas como efeitos colaterais e bugs difíceis de rastrear.
+
+<h3>Composição de funções</h3>
+Composição de funções é uma técnica em programação funcional que consiste em combinar duas ou mais funções para formar uma nova função. Essa nova função é criada aplicando uma função após a outra, em uma ordem específica, para obter um resultado final.
+Em JavaScript, podemos compor funções usando a técnica de "pipeline" com a ajuda do método reduce() de arrays. Também podemos usar bibliotecas de utilidades de função, como o Lodash ou o Ramda, que oferecem métodos para compor funções de forma mais conveniente e flexível.
