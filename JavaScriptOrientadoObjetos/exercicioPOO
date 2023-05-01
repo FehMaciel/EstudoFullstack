@@ -1,0 +1,38 @@
+class Pessoa{
+  constructor(nome, idade, email){
+    this.nome = nome;
+    this.idade = idade;
+    this.email = email;
+  }
+  mostrarDados(){
+    console.log("Seu Nome é " + this.nome + " tem " + this.idade + " anos, seu email é " + this.email);
+  }
+}
+
+class Alunos extends Pessoa{
+  constructor(nome, idade, email, curso, turma){
+    super(nome, idade, email);
+    this.curso = curso;
+    this.turma = turma;
+  }
+  mostrarDados(){
+    console.log("Seu Nome é " + this.nome + " está cursando " + this.curso + " na turma " + this.turma);
+  }
+}
+
+class Professor extends Pessoa{
+  constructor(nome, idade, email, disciplina, salario){
+    super(nome, idade, email);
+    this.disciplina = disciplina;
+    this.salario = salario;
+  }
+  mostrarDados(){
+    console.log("Seu Nome é " + this.nome + " está conduzindo a disciplina " + this.disciplina + " e recebe R$" + this.salario);
+  }
+}
+
+let pessoa1 = new Alunos ('Felippe', 19, 'felippe@gmail.com', 'ADS', '2A');
+let professor1 = new Professor ('Diego', 19, 'felippe@gmail.com', 'Matematica', 5000);
+
+pessoa1.mostrarDados();
+professor1.mostrarDados();
