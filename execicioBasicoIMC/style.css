@@ -1,0 +1,12 @@
+.box{
+    width: 250px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+
+#erro{
+    color: #f85656 !important;
+    font-style: italic;
+    font-size: 8pt;
+}
